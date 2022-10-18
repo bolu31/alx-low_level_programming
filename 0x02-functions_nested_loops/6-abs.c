@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _abs - computes the absolute value of an intrger
@@ -7,10 +8,20 @@
  */
 int _abs(int b)
 {
-	if (b >= 0)
-		return (b);
-}
-	else
+
+if (b < 0)
 {
-		return (-b);
+return (b * (-1));
+}
+
+else if (b == 0)
+{
+return (0);
+}
+
+else
+{
+return (b);
+}
+
 }
