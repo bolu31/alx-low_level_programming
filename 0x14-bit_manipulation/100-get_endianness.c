@@ -12,5 +12,7 @@ int get_endianness(void)
 	if (*endian == 1)
 		return (1);
 
+	else
+
 	return (0);
 }
